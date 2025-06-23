@@ -1,0 +1,263 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #d1e0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+/* Container holding everything */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+  
+  /* Headings */
+.container h1 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+  
+.container h2 {
+    font-size: 16px;
+    color: #5b5a5a;
+    margin-bottom: 30px;
+}
+  
+/* Form box */
+.reg {
+    text-align: left;
+}
+  
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+  
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 25px;
+    border: 1px solid #c7c5c5;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.2s ease-in-out;
+}
+  
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #004080;
+    outline: none;
+}
+  
+/* Error or success message */
+p {
+    font-size: 14px;
+    color: #b40000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+  
+button:hover {
+    background-color: #005fbe;
+}
+  
+/* Link to register */
+a {
+    color: #004080;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+.profile_th {
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile_td {
+    text-align: center;
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.profile_edit {
+    text-align: center;
+    background-color: lightpink;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.profile_edit input {
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 25px;
+    width: 90%;
+}
+
+/*Mel*/
+
+
+/* Centered Container */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: rgb(222, 229, 252);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: popupFade 0.6s ease-in;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+
+
+/* Close Button */
+.clsbtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.clsbtn:hover {
+  background: #333;
+}
+
+/* Login Form */
+.login-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Heading */
+.login-head {
+  font-family: 'Lobster', cursive;
+  font-size: 26px;
+  color: #232c4a;
+  margin-bottom: 10px;
+}
+
+/* Labels */
+.inputlab {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #232c4a;
+  text-align: left;
+}
+
+/* Inputs */
+.input {
+  font-size: 1em;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  color: #0909b3;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Submit Button */
+.floginbtn {
+  padding: 10px 0;
+  background-color: #48f720;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, font-size 0.3s;
+}
+.floginbtn:hover {
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+/* Forgot Password */
+.fpsswd {
+  color: #b51d18;
+  font-size: 13px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.85;
+}
+.fpsswd:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes popupFade {
+  from {
+    transform: translate(-50%, -30%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 15px;
+    width: 95%;
+  }
+  .login-head {
+    font-size: 22px;
+  }
+  .floginbtn {
+    font-size: 15px;
+  }
+}
+

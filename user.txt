@@ -1,0 +1,9 @@
+Ali Bin Abu,ali@edu.my,password123
+Siti Nurhaliza,siti@edu.my,password123
+John Doe,john.doe@edu.my,pass456
+Jane Smith,jane@edu.my,mysecurepwd
+Ahmad Farid,ahmad.farid@edu.my,12345test
+
+john@example.com, password123
+jane@staff.com, staff456
+admin@system.com, admin789
